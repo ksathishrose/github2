@@ -1,14 +1,8 @@
-name: shell commands
-
-on: [push]
-
+name: hello-world
+on: push
 jobs:
-  run-shell-command:
+  my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo: "helloworld"
-      - name: multiline script
-        run: |
-          node -V
-          npm -V
+      - name: my-step
+        run: echo "Hello World!"
